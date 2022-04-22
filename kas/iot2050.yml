@@ -34,6 +34,8 @@ repos:
       fix-pseudo:
         repo: cip-core
         path: patches/isar/0001-Fix-permissions-when-splitting-rootfs-folders-across.patch
+      expand-with-dm:
+        path: isar-patches/0001-expand-on-first-boot-Add-support-for-devicemapper.patch
 
   meta-coral:
     url: https://github.com/siemens/meta-coral
@@ -41,7 +43,7 @@ repos:
 
   cip-core:
     url: https://gitlab.com/cip-project/cip-core/isar-cip-core.git
-    refspec: d063f5461d055ccc97993622a6009a4ab6018771
+    refspec: fb659e7b54b3e518a02c5f0fba214ad8244e0d3b
 
 bblayers_conf_header:
   standard: |

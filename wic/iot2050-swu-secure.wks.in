@@ -21,4 +21,4 @@ part --source rawcopy --sourceparams "file=${IMAGE_FULLNAME}.${VERITY_IMAGE_TYPE
 part /var --source rootfs --rootfs-dir=${IMAGE_ROOTFS}/var --label var --fstype=ext4 --mkfs-extraopts "-T default" --align 1024  --size 512M
 part /home --source rootfs --rootfs-dir=${IMAGE_ROOTFS}/home --label home --fstype=ext4 --mkfs-extraopts "-T default" --align 1024  --size 512M
 
-bootloader --ptable gpt --append "console=ttyS3,115200n8 earlycon=ns16550a,mmio32,0x02810000 rootwait ${EXTRA_KERNEL_PARAMS}"
+bootloader --ptable gpt --append "console=ttyS3,115200n8 earlycon=ns16550a,mmio32,0x02810000 rootwait panic=5 ${EXTRA_KERNEL_PARAMS}"
