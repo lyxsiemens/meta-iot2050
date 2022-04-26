@@ -11,6 +11,6 @@ header:
 local_conf_header:
   secureboot_override: |
     OVERRIDES .= ":secureboot"
-  snakeoil-keys: |
-    IMAGER_BUILD_DEPS += "ebg-secure-boot-snakeoil"
-    IMAGER_INSTALL += "ebg-secure-boot-snakeoil"
+  secureboot-secrets: |
+    IMAGER_BUILD_DEPS += "ebg-secure-boot-custmpk"
+    IMAGER_INSTALL += "ebg-secure-boot-custmpk"

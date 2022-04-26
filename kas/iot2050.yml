@@ -43,7 +43,7 @@ repos:
 
   cip-core:
     url: https://gitlab.com/cip-project/cip-core/isar-cip-core.git
-    refspec: fb659e7b54b3e518a02c5f0fba214ad8244e0d3b
+    refspec: 66f26314fa10309daf5595342c34f0855010773a
 
 bblayers_conf_header:
   standard: |
